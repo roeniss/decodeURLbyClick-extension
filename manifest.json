@@ -5,10 +5,22 @@
   "version": "1.0",
 
   "background": {
-    "scripts": ["listener.js"],
+    "scripts": ["listeners.js"],
     "persistent": false
   },
 
+  "permissions": ["clipboardRead", "clipboardWrite", "tabs"],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16red.png",
+      "24": "images/icon24red.png",
+      "32": "images/icon32red.png",
+      "48": "images/icon48red.png",
+      "128": "images/icon128red.png"
+    },
+    "default_title": "Decode URI by Click"
+  },
+
   "current_locale": "ko",
-  "permissions": ["clipboardRead", "clipboardWrite"]
+  "icons": { "16": "images/icon16red.png", "48": "images/icon48red.png", "128": "images/icon128red.png" }
 }
