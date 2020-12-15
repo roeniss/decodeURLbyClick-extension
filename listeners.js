@@ -24,9 +24,9 @@ chrome.tabs.onUpdated.addListener(function (_tabId, changeInfo, _tab) {
 
 chrome.browserAction.onClicked.addListener(function (_tab) {
   try {
-    var originalUri = readFromClipboard();
-    var decodedUri = decodeURIComponent(originalUri);
-    copyToClipboard(decodedUri);
+    var originalUrl = readFromClipboard();
+    var decodedUrl = decodeURIComponent(originalUrl);
+    copyToClipboard(decodedUrl);
     chrome.browserAction.setIcon({ path: iconGreenPaths });
     chrome.browserAction.setPopup({ popup: "./info.html" });
   } catch (error) {

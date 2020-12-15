@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Decode URI by Click",
-  "description": "Copy URI, Click Icon!",
+  "name": "Decode URL by Click",
+  "description": "Copy URL, Click Icon!",
   "version": "1.0",
 
   "background": {
@@ -18,7 +18,7 @@
       "48": "images/icon48red.png",
       "128": "images/icon128red.png"
     },
-    "default_title": "Decode URI by Click"
+    "default_title": "Decode URL by Click"
   },
 
   "current_locale": "ko",
