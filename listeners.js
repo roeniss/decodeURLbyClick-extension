@@ -1,3 +1,5 @@
+const { readFromClipboard, copyToClipboard } = require("./functions");
+
 const iconRedPaths = {
   16: "images/icon16red.png",
   24: "images/icon24red.png",
@@ -34,24 +36,3 @@ chrome.browserAction.onClicked.addListener(function (_tab) {
     return;
   }
 });
-
-// ref: https://stackoverflow.com/a/43375402/8556340
-function readFromClipboard() {
-  var readTo = document.createElement("textarea");
-  document.body.appendChild(readTo);
-  readTo.select();
-  readTo.focus();
-  if (document.execCommand("paste")) return readTo.value;
-  return "";
-}
-
-// ref: https://stackoverflow.com/a/18455088/8556340
-function copyToClipboard(text) {
-  var copyFrom = document.createElement("textarea");
-  copyFrom.textContent = text;
-  document.body.appendChild(copyFrom);
-  copyFrom.select();
-  document.execCommand("copy");
-  copyFrom.blur();
-  document.body.removeChild(copyFrom);
-}
