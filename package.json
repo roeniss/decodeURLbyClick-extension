@@ -1,0 +1,15 @@
+{
+  "name": "decode-url-by-click",
+  "version": "1.0.0",
+  "main": "listeners.js",
+  "repository": "https://github.com/roeniss/decodeURIbyClick-extension.git",
+  "author": "roeniss2@gmail.com",
+  "license": "BSD",
+  "private": false,
+  "scripts": {
+    "test": "mocha **.test.js"
+  },
+  "dependencies": {
+    "mocha": "^8.2.1"
+  }
+}
