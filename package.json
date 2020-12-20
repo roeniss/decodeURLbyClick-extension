@@ -10,6 +10,7 @@
     "test": "mocha **.test.js"
   },
   "dependencies": {
-    "mocha": "^8.2.1"
+    "mocha": "^8.2.1",
+    "require-reload": "^0.2.2"
   }
 }
