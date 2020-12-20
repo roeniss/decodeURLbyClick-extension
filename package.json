@@ -7,7 +7,8 @@
   "license": "BSD",
   "private": false,
   "scripts": {
-    "test": "mocha **.test.js"
+    "test": "mocha",
+    "test:watch": "mocha --watch"
   },
   "dependencies": {
     "mocha": "^8.2.1",

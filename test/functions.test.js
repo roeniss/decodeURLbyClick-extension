@@ -1,11 +1,11 @@
 const assert = require("assert");
 const reload = require("require-reload")(require);
-const { readFromClipboard, copyToClipboard } = require("./functions");
+const { readFromClipboard, copyToClipboard } = require("../functions");
 
 describe("functions test", function () {
   beforeEach("re-init document stub", function () {
     // so many stub... I'm not sure this tests have any meaning at all.
-    reload("./test/documentStub");
+    reload("./documentStub");
   });
 
   describe("readFromClipboard test", function () {
