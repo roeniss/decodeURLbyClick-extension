@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "프리티 URL",
+  "description": "버튼 한 방이면 한글 URL이 이쁘게 출력됩니다!",
+  "version": "1.0.3",
+
+  "background": {
+    "scripts": ["listeners.js"],
+    "persistent": false
+  },
+
+  "permissions": ["clipboardRead", "clipboardWrite"],
+  "browser_action": {
+    "default_icon": {
+      "16": "images/icon16red.png",
+      "24": "images/icon24red.png",
+      "32": "images/icon32red.png",
+      "48": "images/icon48red.png",
+      "128": "images/icon128red.png"
+    },
+    "default_title": "Decode URL by Click"
+  },
+
+  "current_locale": "ko",
+  "icons": { "16": "images/icon16red.png", "48": "images/icon48red.png", "128": "images/icon128red.png" }
+}
