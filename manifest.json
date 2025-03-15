@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Decode URL by Click",
   "description": "Copy URL, Click Icon!",
-  "version": "1.0.1",
+  "version": "1.0.3",
 
   "background": {
     "scripts": ["listeners.js"],
