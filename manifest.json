@@ -5,8 +5,7 @@
   "version": "1.0.4",
 
   "background": {
-    "scripts": ["listeners.js"],
-    "persistent": false
+    "service_worker": "listeners.js"
   },
 
   "permissions": ["clipboardRead", "clipboardWrite"],
