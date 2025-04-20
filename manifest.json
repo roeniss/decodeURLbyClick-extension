@@ -2,25 +2,31 @@
   "manifest_version": 3,
   "name": "Decode URL by Click",
   "description": "Copy URL, Click Icon!",
-  "version": "1.0.3",
+  "version": "1.0.4",
 
   "background": {
-    "scripts": ["listeners.js"],
-    "persistent": false
+    "service_worker": "service_worker.js",
+    "type": "module"
   },
 
   "permissions": ["clipboardRead", "clipboardWrite"],
-  "browser_action": {
-    "default_icon": {
-      "16": "images/icon16red.png",
-      "24": "images/icon24red.png",
-      "32": "images/icon32red.png",
-      "48": "images/icon48red.png",
-      "128": "images/icon128red.png"
-    },
-    "default_title": "Decode URL by Click"
+
+  "icons": {
+    "16": "images/icon16red.png",
+    "24": "images/icon24red.png",
+    "32": "images/icon32red.png",
+    "48": "images/icon48red.png",
+    "128": "images/icon128red.png"
   },
 
-  "current_locale": "ko",
-  "icons": { "16": "images/icon16red.png", "48": "images/icon48red.png", "128": "images/icon128red.png" }
+  "action": {  },
+
+  "content_scripts": [
+      {
+         "matches": [
+            "<all_urls>"
+         ],
+         "js": ["content_script.js"]
+      }
+   ]
 }
