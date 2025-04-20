@@ -9,17 +9,11 @@
   },
 
   "permissions": ["clipboardRead", "clipboardWrite"],
-  "browser_action": {
-    "default_icon": {
-      "16": "images/icon16red.png",
-      "24": "images/icon24red.png",
-      "32": "images/icon32red.png",
-      "48": "images/icon48red.png",
-      "128": "images/icon128red.png"
-    },
-    "default_title": "Decode URL by Click"
-  },
-
-  "current_locale": "ko",
-  "icons": { "16": "images/icon16red.png", "48": "images/icon48red.png", "128": "images/icon128red.png" }
+  "icons": {
+    "16": "images/icon16red.png",
+    "24": "images/icon24red.png",
+    "32": "images/icon32red.png",
+    "48": "images/icon48red.png",
+    "128": "images/icon128red.png"
+  }
 }
