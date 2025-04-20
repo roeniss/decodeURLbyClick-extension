@@ -1,6 +1,6 @@
 {
   "name": "decode-url-by-click",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "main": "listeners.js",
   "repository": "https://github.com/roeniss/decodeURIbyClick-extension.git",
   "author": "roeniss2@gmail.com",
