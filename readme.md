@@ -27,3 +27,9 @@ But if you keep troubling, plaese leave a issue. I'll reply to it ASAP.
 ## Contribution
 
 You are fully free to commit or suggest any suggestion. I'm always welcome to you! :)
+
+## How to upload
+
+```sh
+zip -r decodeURLbyClick.zip manifest.json *.js images/* *.html
+```
